@@ -6,14 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Formatação de Texto</title>
+    <style>
+        mark{
+            background-color: chartreuse;
+        }
+    </style>
 </head>
 <body>
     <h1>Fromatação de Texto</h1>
     <h2>Negrito</h2>
-    <p>Vou colocar em negrino de forma não semântica: <b>termo em negrito</b></p>
     <p>Vou colocar em negrito de forma semântica: <strong>termo em destaque</strong></p>
     <h2>Itálico</h2>
-    <p>Vou colocar em itálico de forma não semântica: <i>termo em itálico</i></p>
     <p>Vou colocar itálico de forma semântica: <em>termo com ênfase</em></p>
+    <h2>Texto Marcado</h2>
+    <p>Para fazer uma  <mark style = "background-color: yellow;">frase marcada</mark>
+        como essa, use a tag MARK</p><!--OBS: Era para ser apenas um mark sem o style,
+        mas o mesmo de cima tirou a cor padrão(yellow)-->
+    <p>Para uma cor diferente use style: <mark style = "background-color: blue;">frase marcada</mark></p>
+    <p>Ou use style em HEAD assim todos os marks ficam desta cor: <mark>frase marcada</mark></p>
+    <h2>Texto Pequeno e Grande</h2>
+    <p>Criando um <small>texto pequeno</small> com SMALL</p>
+    <p>Criando um <big>texto grande</big> com BIG(obsoleto)</p>
+    <h2>Criando um texto excluido(riscado)</h2>
+    <p><del>Texto excluido</del> com DEL</p>
+    <h2>Criando um texto inserido(sublinhado)</h2>
+    <p><ins>Texto inserido</ins> com INS</p>
 </body>
 </html>
